@@ -1,11 +1,15 @@
-//Ques-3) Valid Anagram
-// An Anagram is a word or phase formed by rearranging the letters of a different word or phase, using all the original letters exactly once.
+/**
+ * Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+ * An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
+ * 
+ * 
+ * @param {string} s
+ * @param {string} t
+ * @return {boolean}
+ */
 
-// Input :s('anagram') ,t('nagaram') ==true;
-//Input :s('cat'),t('rat') == false;
 
-
-//1)By sorting both words and then matching them;
+//By sorting both words and then matching them;
 
 // const isAnagram= (s,t)=>{
 //     s=s.split('').sort().join('');
