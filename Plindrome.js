@@ -1,18 +1,22 @@
-// Ques-1) A plindorme number is a number which when reads is the same forward and backward 
+/**
+ * Given an integer x, return true if x is a palindrome, and false otherwise.
+ *  
+ * @param {number} x
+ * @return {boolean}
+ */
 
-// for example 121,999
 
 const isPlindrome=(num)=>{
-    console.time('Time taken');
     const numToStr=`${num}`;
     const reverseNum=numToStr.split('').reverse().join('');
     if(numToStr===reverseNum){
-        console.log(`${num} is a Plindrome Number`);
+        console.log(true);
+       return true;
     }else{
-        console.log(`${num} is not a Plindrome Number`);
+        console.log(false);
+        return false;
     }
-    console.timeEnd('Time taken');
 
 }
 
-isPlindrome(121);
+isPlindrome(233);
